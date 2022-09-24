@@ -39,6 +39,7 @@
 # java
 *.iml
 out/
+JAVA/
 
 # intellij
 .idea/
