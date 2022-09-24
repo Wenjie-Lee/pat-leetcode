@@ -37,7 +37,7 @@
 .lh/
 
 # java
-*.imi
+*.iml
 
 # intellij
 .idea/
