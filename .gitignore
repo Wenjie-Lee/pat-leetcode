@@ -35,3 +35,6 @@
 .ln/
 .vscode/
 .lh/
+
+# intellij
+.idea/
