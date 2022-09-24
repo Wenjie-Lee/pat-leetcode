@@ -36,5 +36,8 @@
 .vscode/
 .lh/
 
+# java
+*.imi
+
 # intellij
 .idea/
