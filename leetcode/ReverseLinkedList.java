@@ -8,7 +8,7 @@ class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
-class Solution {
+class ReverseLinkedList {
 
     /**
      * @description: 反转 ListNode 列表
@@ -118,7 +118,6 @@ class Solution {
         printListNode(testList5, "test5: ");
         testList5 = Solution.reverseList(testList5);
         printListNode(testList5, "test5: ");
-
 
     }
 }

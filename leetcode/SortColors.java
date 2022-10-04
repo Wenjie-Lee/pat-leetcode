@@ -55,13 +55,14 @@ class Solution {
         int p1 = nums[low];
         int p2 = nums[(low + high) >> 1];
         int p3 = nums[high];
-        int p = Math.min(Math.max(p1, p2), Math.max(p1, p3));
+        int p = Math.min(Math.max(p1, p2), Math.max(p2, p3));
         int pIdx;
         if (p == nums[low]) pIdx = low;
         else if (p == nums[high]) pIdx = high;
-        else pIdx = (low + high) >> 2;
+        else pIdx = (low + high) >> 1;
         return pIdx;
     }
+
     int partition(int[] nums, int low, int high) {
         // select 3 pivot, then select the middle from them
         int pivot = getRandomPivot(nums, low, high);
