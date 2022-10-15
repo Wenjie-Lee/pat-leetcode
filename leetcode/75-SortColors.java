@@ -50,6 +50,12 @@ class Solution {
                 i++;
         }
     }
+    public void sortColors(int[] nums) {
+        if (nums == null || nums.length <= 1) return;
+
+//        quickSort(nums, 0, nums.length - 1);
+        merge(nums, 0, nums.length - 1);
+    }
 
     int getRandomPivot(int[] nums, int low, int high) {
         int p1 = nums[low];
@@ -88,13 +94,6 @@ class Solution {
             quickSort(nums, low, idx - 1);
             quickSort(nums, idx + 1, high);
         }
-    }
-
-    public void sortColors(int[] nums) {
-        if (nums == null || nums.length <= 1) return;
-
-//        quickSort(nums, 0, nums.length - 1);
-        merge(nums, 0, nums.length - 1);
     }
 }
 
